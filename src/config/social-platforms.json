@@ -1,0 +1,39 @@
+{
+  "platforms": {
+    "youtube": {
+      "name": "YouTube",
+      "apiKey": "${YOUTUBE_API_KEY}",
+      "monetizationUrl": "https://www.youtube.com/monetization",
+      "dashboardUrl": "https://studio.youtube.com",
+      "features": ["AdSense", "Memberships", "Superchats", "Shorts Fund"]
+    },
+    "instagram": {
+      "name": "Instagram",
+      "apiKey": "${INSTAGRAM_API_KEY}",
+      "monetizationUrl": "https://www.instagram.com/instagram-reels-play-bonus",
+      "dashboardUrl": "https://business.instagram.com",
+      "features": ["Reels Bonus", "Badges", "Subscriptions", "Branded Content"]
+    },
+    "tiktok": {
+      "name": "TikTok",
+      "apiKey": "${TIKTOK_API_KEY}",
+      "monetizationUrl": "https://www.tiktok.com/creator/creator-fund",
+      "dashboardUrl": "https://creator.tiktok.com",
+      "features": ["Creator Fund", "Gifts", "Live Gifts", "Branded Hashtags"]
+    },
+    "facebook": {
+      "name": "Facebook",
+      "apiKey": "${FACEBOOK_API_KEY}",
+      "monetizationUrl": "https://www.facebook.com/creators/monetization",
+      "dashboardUrl": "https://business.facebook.com",
+      "features": ["In-Stream Ads", "Fan Subscriptions", "Stars", "Branded Content"]
+    },
+    "twitch": {
+      "name": "Twitch",
+      "apiKey": "${TWITCH_API_KEY}",
+      "monetizationUrl": "https://www.twitch.tv/creator-camp/monetization",
+      "dashboardUrl": "https://dashboard.twitch.tv",
+      "features": ["Subscriptions", "Bits", "Ads", "Sponsorships"]
+    }
+  }
+}
