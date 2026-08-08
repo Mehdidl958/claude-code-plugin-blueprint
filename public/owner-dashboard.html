@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد مالک - ViraSphere Commerce</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f0f0f; color: #fff; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 10px; margin-bottom: 30px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { font-size: 1.1em; opacity: 0.9; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .card { background: #1a1a1a; border: 1px solid #333; padding: 20px; border-radius: 10px; transition: all 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #667eea; }
+        .card h2 { font-size: 1.3em; margin-bottom: 15px; color: #667eea; }
+        .stats { display: flex; justify-content: space-between; margin: 15px 0; }
+        .stat-item { text-align: center; flex: 1; }
+        .stat-value { font-size: 2em; font-weight: bold; color: #667eea; }
+        .stat-label { font-size: 0.9em; opacity: 0.7; margin-top: 5px; }
+        .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .link-btn { display: inline-block; padding: 8px 16px; background: #667eea; color: #fff; text-decoration: none; border-radius: 5px; font-size: 0.9em; transition: background 0.3s; }
+        .link-btn:hover { background: #764ba2; }
+        .revenue-section { background: #1a1a1a; border: 1px solid #333; padding: 20px; border-radius: 10px; margin-bottom: 30px; }
+        .revenue-chart { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-top: 20px; }
+        .revenue-item { background: #2a2a2a; padding: 15px; border-radius: 8px; text-align: center; border-left: 4px solid #667eea; }
+        .platform-icon { font-size: 2em; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👑 داشبورد مالک - ViraSphere Commerce</h1>
+            <p>مدیریت تمام درآمدها و شبکه‌های اجتماعی</p>
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="grid">
+            <div class="card">
+                <h2>💰 درآمد کل ماهانه</h2>
+                <div class="stat-value">$24,580</div>
+                <div class="stat-label">افزایش 23% نسبت به ماه قبل</div>
+            </div>
+            <div class="card">
+                <h2>👥 کل دنبال‌کنندگان</h2>
+                <div class="stat-value">1.2M</div>
+                <div class="stat-label">در تمام پلتفرم‌ها</div>
+            </div>
+            <div class="card">
+                <h2>📊 نرخ تعامل</h2>
+                <div class="stat-value">12.5%</div>
+                <div class="stat-label">بالاتر از میانگین صنعت</div>
+            </div>
+        </div>
+
+        <!-- Revenue Breakdown by Platform -->
+        <div class="revenue-section">
+            <h2>💳 درآمدهای پلتفرم‌ها</h2>
+            <div class="revenue-chart">
+                <div class="revenue-item">
+                    <div class="platform-icon">▶️</div>
+                    <div class="stat-value">$8,450</div>
+                    <div class="stat-label">YouTube</div>
+                    <div class="links">
+                        <a href="https://studio.youtube.com" class="link-btn" target="_blank">داشبورد</a>
+                        <a href="https://www.youtube.com/monetization" class="link-btn" target="_blank">درآمد</a>
+                    </div>
+                </div>
+                <div class="revenue-item">
+                    <div class="platform-icon">📷</div>
+                    <div class="stat-value">$5,230</div>
+                    <div class="stat-label">Instagram</div>
+                    <div class="links">
+                        <a href="https://business.instagram.com" class="link-btn" target="_blank">داشبورد</a>
+                        <a href="https://www.instagram.com/instagram-reels-play-bonus" class="link-btn" target="_blank">درآمد</a>
+                    </div>
+                </div>
+                <div class="revenue-item">
+                    <div class="platform-icon">🎵</div>
+                    <div class="stat-value">$7,890</div>
+                    <div class="stat-label">TikTok</div>
+                    <div class="links">
+                        <a href="https://creator.tiktok.com" class="link-btn" target="_blank">داشبورد</a>
+                        <a href="https://www.tiktok.com/creator/creator-fund" class="link-btn" target="_blank">درآمد</a>
+                    </div>
+                </div>
+                <div class="revenue-item">
+                    <div class="platform-icon">f</div>
+                    <div class="stat-value">$1,520</div>
+                    <div class="stat-label">Facebook</div>
+                    <div class="links">
+                        <a href="https://business.facebook.com" class="link-btn" target="_blank">داشبورد</a>
+                        <a href="https://www.facebook.com/creators/monetization" class="link-btn" target="_blank">درآمد</a>
+                    </div>
+                </div>
+                <div class="revenue-item">
+                    <div class="platform-icon">🎮</div>
+                    <div class="stat-value">$1,890</div>
+                    <div class="stat-label">Twitch</div>
+                    <div class="links">
+                        <a href="https://dashboard.twitch.tv" class="link-btn" target="_blank">داشبورد</a>
+                        <a href="https://www.twitch.tv/creator-camp/monetization" class="link-btn" target="_blank">درآمد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
