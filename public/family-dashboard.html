@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد نزدیکان - ViraSphere Commerce</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f0f0f; color: #fff; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 30px; border-radius: 10px; margin-bottom: 30px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .family-member { background: #1a1a1a; border: 1px solid #333; padding: 20px; border-radius: 10px; transition: all 0.3s; }
+        .family-member:hover { transform: translateY(-5px); border-color: #f5576c; }
+        .member-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .member-name { font-size: 1.3em; font-weight: bold; color: #f5576c; }
+        .member-role { background: #2a2a2a; padding: 5px 10px; border-radius: 5px; font-size: 0.8em; }
+        .revenue-badge { font-size: 1.8em; color: #f5576c; font-weight: bold; margin: 10px 0; }
+        .revenue-label { font-size: 0.9em; opacity: 0.7; }
+        .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .link-btn { padding: 6px 12px; background: #f5576c; color: #fff; text-decoration: none; border-radius: 5px; font-size: 0.85em; transition: background 0.3s; border: none; cursor: pointer; }
+        .link-btn:hover { background: #f093fb; }
+        .permission-list { margin-top: 15px; padding-top: 15px; border-top: 1px solid #333; }
+        .permission-item { padding: 8px 0; font-size: 0.9em; }
+        .permission-item::before { content: "✓ "; color: #f5576c; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👨‍👩‍👧‍👦 داشبورد نزدیکان - ViraSphere Commerce</h1>
+            <p>مدیریت و پایش درآمدهای خانوادگی و همکاران</p>
+        </div>
+
+        <div class="grid">
+            <!-- Family Member 1 -->
+            <div class="family-member">
+                <div class="member-header">
+                    <div class="member-name">علی محمدی</div>
+                    <div class="member-role">مدیر محتوا</div>
+                </div>
+                <div class="revenue-badge">$3,450</div>
+                <div class="revenue-label">درآمد این ماه</div>
+                <div class="permission-list">
+                    <div class="permission-item">دسترسی YouTube</div>
+                    <div class="permission-item">دسترسی Instagram</div>
+                    <div class="permission-item">دسترسی TikTok</div>
+                </div>
+                <div class="links">
+                    <a href="/api/family/dashboard/ali-mohammadi" class="link-btn">داشبورد شخصی</a>
+                    <a href="/api/family/analytics/ali-mohammadi" class="link-btn">تحلیلات</a>
+                    <a href="/api/family/withdraw/ali-mohammadi" class="link-btn">برداشت</a>
+                </div>
+            </div>
+
+            <!-- Family Member 2 -->
+            <div class="family-member">
+                <div class="member-header">
+                    <div class="member-name">فاطمه رضایی</div>
+                    <div class="member-role">تولیدکننده</div>
+                </div>
+                <div class="revenue-badge">$2,180</div>
+                <div class="revenue-label">درآمد این ماه</div>
+                <div class="permission-list">
+                    <div class="permission-item">دسترسی Instagram Reels</div>
+                    <div class="permission-item">دسترسی TikTok</div>
+                    <div class="permission-item">دسترسی Facebook</div>
+                </div>
+                <div class="links">
+                    <a href="/api/family/dashboard/fateme-rezaei" class="link-btn">داشبورد شخصی</a>
+                    <a href="/api/family/analytics/fateme-rezaei" class="link-btn">تحلیلات</a>
+                    <a href="/api/family/withdraw/fateme-rezaei" class="link-btn">برداشت</a>
+                </div>
+            </div>
+
+            <!-- Family Member 3 -->
+            <div class="family-member">
+                <div class="member-header">
+                    <div class="member-name">حسن کریمی</div>
+                    <div class="member-role">تدوین ویدیو</div>
+                </div>
+                <div class="revenue-badge">$1,920</div>
+                <div class="revenue-label">درآمد این ماه</div>
+                <div class="permission-list">
+                    <div class="permission-item">دسترسی YouTube</div>
+                    <div class="permission-item">دسترسی TikTok</div>
+                </div>
+                <div class="links">
+                    <a href="/api/family/dashboard/hasan-karimi" class="link-btn">داشبورد شخصی</a>
+                    <a href="/api/family/analytics/hasan-karimi" class="link-btn">تحلیلات</a>
+                    <a href="/api/family/withdraw/hasan-karimi" class="link-btn">برداشت</a>
+                </div>
+            </div>
+
+            <!-- Family Member 4 -->
+            <div class="family-member">
+                <div class="member-header">
+                    <div class="member-name">زهره احمدی</div>
+                    <div class="member-role">متخصص SEO</div>
+                </div>
+                <div class="revenue-badge">$1,650</div>
+                <div class="revenue-label">درآمد این ماه</div>
+                <div class="permission-list">
+                    <div class="permission-item">دسترسی YouTube Analytics</div>
+                    <div class="permission-item">دسترسی Instagram Insights</div>
+                </div>
+                <div class="links">
+                    <a href="/api/family/dashboard/zahra-ahmadi" class="link-btn">داشبورد شخصی</a>
+                    <a href="/api/family/analytics/zahra-ahmadi" class="link-btn">تحلیلات</a>
+                    <a href="/api/family/withdraw/zahra-ahmadi" class="link-btn">برداشت</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
