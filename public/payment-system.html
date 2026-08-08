@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيستم الدفع والتكسب - ViraSphere</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI'; background: #0f0f0f; color: #fff; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .payment-section { background: linear-gradient(135deg, #00d4ff, #0099ff); padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+        .payment-methods { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .method-card { background: #1a1a1a; border: 2px solid #333; padding: 20px; border-radius: 10px; transition: all 0.3s; }
+        .method-card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .method-name { font-size: 1.3em; font-weight: bold; color: #00d4ff; margin-bottom: 10px; }
+        .method-fee { color: #ffd700; font-size: 0.9em; margin: 10px 0; }
+        .payment-btn { width: 100%; padding: 12px; background: #00d4ff; color: #000; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 15px; transition: background 0.3s; }
+        .payment-btn:hover { background: #00a8cc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="payment-section">
+            <h1>💰 سيستم الدفع والتكسب</h1>
+            <p>ابدأ بكسب دخل بالدولار والريال من وسائل التواصل الاجتماعي</p>
+        </div>
+
+        <div class="payment-methods">
+            <div class="method-card">
+                <div class="method-name">💳 Stripe</div>
+                <p>دخل: حتى $50,000/شهر</p>
+                <div class="method-fee">رسوم: 2.9% + $0.30</div>
+                <button class="payment-btn" onclick="setupPayment('stripe')">تفعيل Stripe</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-name">🏳️ PayPal</div>
+                <p>دخل: حتى $100,000/شهر</p>
+                <div class="method-fee">رسوم: 2.2% + $0.30</div>
+                <button class="payment-btn" onclick="setupPayment('paypal')">تفعيل PayPal</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-name">🌍 Wise</div>
+                <p>دخل: حتى $250,000/شهر</p>
+                <div class="method-fee">رسوم: 0.7-2%</div>
+                <button class="payment-btn" onclick="setupPayment('wise')">تفعيل Wise</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-name">₿ Crypto</div>
+                <p>دخل: غير محدود</p>
+                <div class="method-fee">رسوم: 1-2%</div>
+                <button class="payment-btn" onclick="setupPayment('crypto')">تفعيل Crypto</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-name">🏦 تحويل بنكي</div>
+                <p>دخل: حتى $500,000/شهر</p>
+                <div class="method-fee">رسوم: رايجان</div>
+                <button class="payment-btn" onclick="setupPayment('bank')">تفعيل تحويل بنكي</button>
+            </div>
+
+            <div class="method-card">
+                <div class="method-name">🇮🇷 دروازه های ايراني</div>
+                <p>دخل: حتى 500 ميليون ريال/شهر</p>
+                <div class="method-fee">رسوم: 2-3%</div>
+                <button class="payment-btn" onclick="setupPayment('iranian')">تفعيل دروازه های ايراني</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setupPayment(method) {
+            console.log('Setting up payment method:', method);
+        }
+    </script>
+</body>
+</html>
